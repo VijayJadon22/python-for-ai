@@ -1,5 +1,15 @@
-import requests
+name = "Alice"
 
-# Download a web page
-response = requests.get("https://api.github.com")
-print(response.status_code)  # Should print 200
+age =25
+
+name="Dave"
+print(name)
+
+is_student=True
+
+user_age=25
+
+firstName="Vijay"
+
+score=0
+print(score)
