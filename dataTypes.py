@@ -29,3 +29,6 @@ long_dash=long_dash*30
 length=long_dash.__len__()
 len(long_dash) #len is a built in function in python which calculates the length of the variable
 len(fullName)
+
+is_logged_in=True
+is_logged_in=False
