@@ -8,6 +8,8 @@ else:
     print("Its pleasant weather")
 
 
+
+#next example
 score=86
 
 if score>=95:
@@ -20,3 +22,13 @@ elif (score>=70):
     print("Satisfactory!")
 else:
     print("Work hard!")
+
+#combine and or not with if elif else
+
+age=12
+has_license=True
+
+if age>=18 and has_license:
+    print("You Can Drive!")
+else:
+    print("You can not drive")
