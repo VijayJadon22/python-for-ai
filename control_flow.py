@@ -32,3 +32,17 @@ if age>=18 and has_license:
     print("You Can Drive!")
 else:
     print("You can not drive")
+
+
+has_ticket=False
+age=15
+
+if has_ticket:
+    if age>=18:
+        print("Enjoy the movie!")
+    else:
+        print("Needs supervision!")
+else:
+        print("Please buy a ticket!")
+        
+
