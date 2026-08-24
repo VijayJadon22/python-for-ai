@@ -35,5 +35,5 @@ def simple_function():
     last_number=numbers[-1]
     return first_number,last_number
 
-first_num , last_num = simple_function()
-print(first_num,last_num)
+num1 , num2 = simple_function()
+print(num1,num2)
