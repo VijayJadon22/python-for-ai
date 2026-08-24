@@ -20,3 +20,8 @@ def double(num):
 
 total=double(10) + double(3)
 print(total)
+
+if double(3)>15:
+    print("Yes")
+else:
+    print("No")
