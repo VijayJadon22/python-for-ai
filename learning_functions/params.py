@@ -16,3 +16,8 @@ def greet_user(first_name,last_name):
     print(f"Hello {first_name} {last_name}")
 
 greet_user("Jatin","Gahlot")
+
+def greet_default(first_name="Vijay",last_name="Jadon"):
+    print(f"Hello {first_name} {last_name}")
+
+greet_default()
