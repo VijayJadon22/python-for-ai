@@ -25,3 +25,15 @@ if double(3)>15:
     print("Yes")
 else:
     print("No")
+
+
+#returning multiple values
+
+def simple_function():
+    numbers=[1, 3, 4, 2, 5]
+    first_number=numbers[0]
+    last_number=numbers[-1]
+    return first_number,last_number
+
+first_num , last_num = simple_function()
+print(first_num,last_num)
