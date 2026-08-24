@@ -17,7 +17,11 @@ def greet_user(first_name,last_name):
 
 greet_user("Jatin","Gahlot")
 
-def greet_default(first_name="Vijay",last_name="Jadon"):
+# def greet_default(first_name="Vijay",last_name="Jadon"):
+#     print(f"Hello {first_name} {last_name}")
+
+# greet_default()
+def greet_default(last_name, first_name="Vijay"): #if there's no default value to last_name then it has to be in first place and the the default values one
     print(f"Hello {first_name} {last_name}")
 
-greet_default()
+greet_default("Singh")
