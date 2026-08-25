@@ -15,3 +15,10 @@ import json
 data={"name":"alice","age":30}
 json_string=json.dumps(data)
 print(json_string)
+
+from math import sqrt
+sqrt(81)
+
+from random import randint
+
+print(randint(1,7))
