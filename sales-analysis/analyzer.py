@@ -25,3 +25,10 @@ print(f"\nShape: {df.shape[0]} rows, {df.shape[1]} columns")
 df["Total"]=df["quantity"]*df["price"]
 print("\nWith totals:")
 print(df)
+
+#create an output directory if not already exists
+
+os.makedirs("output",exist_ok=True)
+
+#Save as different formats
+df.to_json("output/sales.json",orient="records")
