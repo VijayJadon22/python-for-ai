@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime, timedelta
 import pandas as pd
+import matplotlib.pyplot as plt
 
 #calculate dates
 today=datetime.now()
@@ -33,3 +34,25 @@ df=pd.DataFrame({
 df["date"]=pd.to_datetime(df["date"])
 
 print(df) #visualized the data as table
+
+
+#-------------------------------
+
+# Create the plot
+plt.figure(figsize=(10, 6))
+plt.plot(df['date'], df['max_temp'], marker='o', label='Max Temp')
+plt.plot(df['date'], df['min_temp'], marker='o', label='Min Temp')
+
+# Add labels and title
+plt.xlabel('Date')
+plt.ylabel('Temperature (°C)')
+plt.title('Paris Weather - Past 7 Days')
+plt.legend()
+
+# Rotate x-axis labels for readability
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot
+plt.savefig('weather_chart.png')
+plt.show()
