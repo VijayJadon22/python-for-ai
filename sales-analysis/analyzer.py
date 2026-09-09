@@ -1,4 +1,6 @@
 import os
+import pandas as pd
+
 
 print("Current Directory",os.getcwd())
 
@@ -9,3 +11,10 @@ if os.path.exists(data_path):
     print(f"Found {data_path}")
 else:
     print("Data Not Found")
+
+#--------------------------------------------------------
+# Now we are going to do tasks
+
+df=pd.read_csv("data/sales.csv")
+print("CSV Data:")
+print(df)
