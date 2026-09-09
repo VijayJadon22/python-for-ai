@@ -18,3 +18,10 @@ else:
 df=pd.read_csv("data/sales.csv")
 print("CSV Data:")
 print(df)
+print(f"\nShape: {df.shape[0]} rows, {df.shape[1]} columns")
+
+
+# Quick operation: calculate total for each row
+df["Total"]=df["quantity"]*df["price"]
+print("\nWith totals:")
+print(df)
