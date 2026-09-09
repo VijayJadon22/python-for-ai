@@ -7,9 +7,10 @@ longitude=77.087627
 # Build the API URL with our parameters
 url=f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m"
 
-import requests
-
 # Make the request
 response=requests.get(url)
 data=response.json()
-print(data)
+
+current=data["current"]
+temperature=current["temperature_2m"]
+print(temperature)
