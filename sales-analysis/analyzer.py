@@ -31,4 +31,12 @@ print(df)
 os.makedirs("output",exist_ok=True)
 
 #Save as different formats
+#1. JSON format good for web API's
 df.to_json("output/sales.json",orient="records")
+
+# 2. Excel format (good for sharing)
+df.to_excel("output/sales.xlsx",index=False)
+
+
+# 3. Updated CSV (with our new total column)
+df.to_csv("output/sales.csv",index=False)
