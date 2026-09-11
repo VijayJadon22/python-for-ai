@@ -16,3 +16,12 @@ class DataValidator:
 
     def get_errors(self):
         return self.errors
+
+# Use the validator
+validator=DataValidator()
+
+# Notice: we don't pass self, just the email
+validator.validate_email("vijaygmail.com")
+validator.validate_age(160)
+print(validator.get_errors())
+print(validator.errors)
